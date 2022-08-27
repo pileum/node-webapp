@@ -13,6 +13,8 @@ app.use(express.urlencoded({ extended: true }));
 /** specify the directory from where to serve static assets such as JavaScript, CSS, images **/
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
 app.use('/jquery-ui', express.static(__dirname + '/node_modules/jquery-ui/dist/'));
 
